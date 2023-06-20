@@ -1,0 +1,5 @@
+{
+    "debug.console.wordWrap": false,
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 80
+}
