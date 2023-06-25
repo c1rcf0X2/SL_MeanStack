@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abc() {
+        alert("single click")
+    }
+    function xyz() {
+        alert("Double Click")
+    }
+    function getFullname() {
+        fn = document.f1.fn.value;
+        ln = document.f1.ln.value;
+        fullname = fn + " " + ln;
+        document.f1.full.value = fullname;
+    }
+    function aaa() {
+        document.getElementById('fn').style.backgroundColor = "lightblue";
+    }
+    function bbb() {
+        document.getElementById('fn').style.backgroundColor = "red"
+    }
+    function ccc() {
+        alert("single click")
+    }
+    function ddd() {
+        alert("Double Click")
+    }
+    function getresult() {
+        fn1 = document.f2.fn1.value;
+        ln1 = document.f2.ln1.value;
+        testresult = fn1 + " " + ln1;
+        document.f2.result.value = testresult;
+    }
+</script>
+
+<body bgcolor="pink">
+    <div style="text-align:center;">
+        <marquee onmouseover="stop()" onmouseout="start()">
+            <h1>HI EventA or Action Demo</h1>
+        </marquee>
+        <form name="f1">
+            FIRST NAME : <input type="text" name="fn" id="fn" onfocus="aaa()" onblur="bbb"><br>
+            LAST NAME : <input type="text" name="ln"><br>
+            FULL NAME : <input type="text" name="full" onfocus="getFullname()"><br><br>
+            <input type="button" value="GET FULL Name" onclick="getFullname()"><br>
+            <button type="button" onclick="abc()">CLICK</button>
+            <button type="button" ondblclick="xyz()">CLICK DOUBLE</button>
+        </form>
+    </div>
+    <hr>
+    <div style="text-align:center">
+        <marquee onmouseover="stop()" onmouseout="start()">
+            <h1>THE QUICK BROWN FOX JUMPS</h1>
+        </marquee>
+        <form name="f2">
+            TEST NAME :<input type="text" name="fn1" id="fn1" onfocus="ccc()" onblur="ddd()"><br>
+            TEST2 NAME :<input type="text" name="ln1"><br>
+            RESULT: <input type="text" name="result" onfocus="getresult()"><br><br>
+            <input type="button" value="GET RESULT" onclick="getresult()"><br>
+            <button type="button" onclick="ccc()">CLICK</button>
+            <button type="button" ondblclick="ddd()">CLICK DOUBLE</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+
+</html>

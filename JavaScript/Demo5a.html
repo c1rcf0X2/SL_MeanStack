@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script>
+        function zz(){
+            val_0=document.getElementById('btn0').value;
+            document.getElementById('display').value=val_0
+        }
+        function aa(){
+            val_1=document.getElementById('btn1').value;
+            document.getElementById('display').value=val_1
+        }
+        function bb(){
+            val_2=document.getElementById('btn2').value;
+            document.getElementById('display').value=val_2
+        }
+        function cc(){
+            val_3=document.getElementById('btn3').value;
+            document.getElementById('display').value=val_3
+        }
+        function dd(){
+            val_4=document.getElementById('btn4').value;
+            document.getElementById('display').value=val_4
+        }
+        function ee(){
+            val_5=document.getElementById('btn5').value;
+            document.getElementById('display').value=val_5
+        }
+        function ff(){
+            val_6=document.getElementById('btn6').value;
+            document.getElementById('display').value=val_6
+        }
+        function gg(){
+            val_7=document.getElementById('btn7').value;
+            document.getElementById('display').value=val_7
+        }
+        function hh(){
+            val_8=document.getElementById('btn8').value;
+            document.getElementById('display').value=val_8
+        }
+        function ii(){
+            val_9=document.getElementById('btn9').value;
+            document.getElementById('display').value=val_9
+        }
+        function xx(){
+            val_mult=document.getElementById('btn*').value;
+            document.getElementById('display').value=val_mult
+        }function qq(){
+            val_div=document.getElementById('btn/').value;
+            document.getElementById('display').value=val_div
+        }
+        function pp(){
+            val_add=document.getElementById('btn+').value;
+            document.getElementById('display').value=val_add
+        }
+        function ss(){
+            val_minus=document.getElementById('btn-').value;
+            document.getElementById('display').value=val_minus;
+        }
+        function uu(){
+            val_equals=document.getElementById('btn=').value;
+            document.getElementById('display').value=val_equals;
+        }
+        function tt(){
+            val_dot=document.getElementById('btn.').value;
+            document.getElementById('display').value=val_dot;
+        }
+        function op(){
+            val_op=document.getElementById('btn(').value;
+            document.getElementById('display').value=val_op;
+        }
+        function cp(){
+            val_cp=document.getElementById('btn)').value;
+            document.getElementById('display').value=val_cp;
+        }
+        function perc(){
+            val_perc=document.getElementById('btn%').value;
+            document.getElementById('display').value=val_perc;
+        }
+        function clr(){
+            val_clr=document.getElementById('btnC').value;
+            document.getElementById('display').value=val_clr;
+        }
+    </script>
+    <style>
+        *{
+            margin: auto;
+        }
+        .container{
+            text-align: center;
+        }
+        input{
+            font-size: 30px;
+            border: 2px solid blue;
+            width: 240px;
+        }
+        button{
+            width: 60px;
+            height: 50px;
+            background-color: gray;
+        }
+        .calculator{
+            background-color: blue;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+    <script>
+        let display=document.getElementById(display);
+        let displayValue='';
+        buttons=document.querySelectorAll('button')
+        for(item of buttons){
+            item.addEventListener('click',(e)=>{buttonText=e.target.innerText;console.log(buttontext)
+            if(buttonText=='X'){
+                buttonText="*";
+                displayValue+=buttonText;
+                display.value=displayValue;
+            }
+        else if(buttonText=='C'){
+            displayValue='';
+            display.value=displayValue;
+        }
+    else if(buttonText=='='){
+        display.value=eval(displayValue)
+    }
+else{
+    displayValue+=buttonText;
+    display.value=displayValue;
+}
+})
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculator</h2>
+        <div class="calculator">
+        <input type="text" name="display" id="display">
+        <table>
+            <tr>
+                <td><button onclick="op()" id="btn(" value="(">(</button></td>
+                <td><button onclick="cp()" id="btn)" value=")">)</button></td>
+                <td><button onclick="perc()" id="btn%" value="%">%</button></td>
+                <td><button onclick="clr()" id="btnC" value="C">C</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="gg()" id="btn7" value="7">7</button></td>
+                <td><button onclick="hh()" id="btn8" value="8">8</button></td>
+                <td><button onclick="ii()" id="btn9" value="9">9</button></td>
+                <td><button onclick="qq()" id="btn/" value="/">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="dd()" id="btn4" value="4">4</button></td>
+                <td><button onclick="ee()" id="btn5" value="5">5</button></td>
+                <td><button onclick="ff()" id="btn6" value="6">6</button ></td>
+                <td><button onclick="xx()" id="btn*" value="*">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="aa()" id="btn1" value="1">1</button></td>
+                <td><button onclick="bb()" id="btn2" value="2">2</button></td>
+                <td><button onclick="cc()" id="btn3" value="3">3</button></td>
+                <td><button onclick="ss()" id="btn-" value="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="zz()" id="btn0" value="0">0</button></td>
+                <td><button onclick="tt()" id="btn." value=".">.</button></td>
+                <td><button onclick="uu()" id="btn=" value="=">=</button></td>
+                <td><button onclick="pp()" id="btn+" value="+">+</button></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>

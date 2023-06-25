@@ -2,7 +2,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/c1rcf0X2/SL_MeanStack.git
+git remote add origin https://github.com/c1rcf0X2/SL_MeanStack.git (https://github.com/Thaneshwara848/SL-Meanstack.git
 git push -u origin main 
     git config --global user.email"circfox@gmail.com"
     git config -- global user.mail "c1rcf0X2"
@@ -75,6 +75,7 @@ CSS
  	line by line we have to write
 ===================
 Bootstrap.
+bootstrap 5 no glyphicons
  
 grid
 button
@@ -91,3 +92,34 @@ navbar
 tooltip
 modal
 
+Java script
+
+JAVA					javascript
+prog lang			 Scripting lang
+compile + run			run
+slow				fast
+server				client + server: so popular
+
+Javascript
+	angular js
+	react js
+	node js
+	express j
+	veniall js
+	vue js
+	backbone js
+	etc..
+
+basics why>
+ functions,
+EVENTS, LOGICS, VALIDATION
+
+data types, operators, statements: if, else, switch
+Operators arith, log, assignment, conditional, etc
+statements:  if, else, switch, looop, for, while, do while, jumping, break, continue
+
+adv javascript:
+class
+obj
+oops
+	

@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function total(value) {
+        a = parseInt(document.f1.a.value);
+        b = parseInt(document.f1.b.value);
+        c = parseInt(document.f1.c.value);
+        d = parseInt(document.f1.d.value);
+        e = parseInt(document.f1.e.value);
+        f = parseInt(document.f1.f.value);
+        sum = 0;
+        sum = a + b + c + d + e + f;
+        document.f1.result.value = sum;
+    }
+    function percentage(value) {
+        document.f1.result2.value = sum / 6;
+    }
+
+</script>
+</head>
+
+<body bgcolor="yellow">
+    <div style="text-align: center;">
+        <h1> INDIVIDUAL SUBJECTS </h1>
+
+        <form name="f1">
+
+            SUBJ1 : <input type="text" name="a"><br>
+            ENGLISH:<input type="text" name="b"><br>
+            HINDI:<input type="text" name="c"><br>
+            SCIENCE:<input type="text" name="d"><br>
+            MATHEMATICS:<input type="text" name="e"><br>
+            SOCIAL STUDIES:<input type="text" name="f"><br><br>
+
+            TOTAL :<input type="text" name="result"><br> <!-- Result: <input type="text" name="result"><br> -->
+            PERCENTAGE :<input type="text" name="result2"><br>
+            <br>
+            <input type="button" value="CALCULATE" onclick="total(value)">
+            <input type="button" value="PERCENTAGE" onclick="percentage(value)">
+        </form>
+
+
+
+
+    </div>
+</body>
+
+</html>
+<!-- <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function total() {
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            c = parseInt(document.f1.c.value);
+            d = parseInt(document.f1.d.value);
+            e = parseInt(document.f1.e.value);
+            f = parseInt(document.f1.f.value);
+
+            sum = a + b + c + d + e + f;
+            document.f1.result.value = sum;
+        }
+    </script>
+</head>
+
+<body bgcolor="yellow">
+    <div style="text-align: center;">
+        <h1> Individual Subjects </h1>
+
+        <form name="f1">
+
+            Kannada : <input type="text" name="a"><br><br>
+            English :<input type="text" name="b"><br><br>
+            Science :<input type="text" name="c"><br><br>
+            mathematics :<input type="text" name="d"><br><br>
+            Social :<input type="text" name="e"><br><br>
+            Hindi :<input type="text" name="f"><br><br>
+
+            Result :<input type="text" name="result"><br>
+
+            <br>
+            <input type="button" value="Total" onclick="Total()">
+            <input type="button" value="Percentage" onclick="Percent()">
+
+        </form>
+    </div>
+</body>
+
+</html> -->

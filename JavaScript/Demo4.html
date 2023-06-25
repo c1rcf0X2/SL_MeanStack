@@ -1,18 +1,37 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo4</title>
     <script>
-        function abc(){
-                a=parseInt(document.f1.a.value);
-                b=parseInt(document.f1.b.value);
-                sum = a + b;
-                document.f1.result.value=sum;
-           // alert("My Full Name is :"+fullname);
+        function add() {
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            sum = a + b;
+            document.f1.result.value = sum;
+        }
+        function sub() {
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            diff = a - b;
+            document.f1.result.value = diff;
+        }
+        function mul() {
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            product = a * b;
+            document.f1.result.value = product;
+        }
+        function div() {
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            quotient = a / b;
+            document.f1.result.value = quotient;
         }
     </script>
 </head>
+
 <body>
     <div style="text-align: center;">
         <h1>HI Please fill the details</h1>
@@ -20,10 +39,14 @@
             A value: <input type="text" name="a"><br>
             B value: <input type="text" name="b"><br><br>
             Result: <input type="text" name="result"><br>
+            <!-- Result: <input type="text" name="result"><br> -->
             <br>
-            <input type="button" value="ADD" onclick="abc()">
+            <input type="button" value="ADD" onclick="add()">
+            <input type="button" value="SUB" onclick="sub()">
+            <input type="button" value="MUL" onclick="mul()">
+            <input type="button" value="DIV" onclick="div()">
         </form>
-
     </div>
 </body>
+
 </html>

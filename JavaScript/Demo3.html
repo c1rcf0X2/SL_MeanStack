@@ -3,15 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo3</title>
-
-<script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
         function abc(){
-
             firstname=document.f1.fn.value;
             lastname=document.f1.ln.value;
-            fullname=firstname +lastmame;
-            //document.f1.full.value=fullname;
-           alert("My Full Name is :"+fullname)
+            fullname=firstname + lastname;
+            document.f1.full.value=fullname;
+            // alert("My Full Name is :" +xname)
         }
     </script>
 </head>
@@ -19,12 +20,12 @@
     <div style="text-align: center;">
         <h1>HI Please fill the details</h1>
         <form name="f1">
-            First name: <input type="text" name="fn"><br>
-            Last name: <input type="text" name="ln"><br><br>
-            Full name: <input type="text" name="fullname"><br>
+            First Name: <input type="text" name="fn"><br>
+            Last Name: <input type="text" name="ln"><br>
+            Full Name: <input type="name" name="full"><br>
             <br>
-            <input type="submit" value="CLICK" onclick="abc()">
+            <input type="button" value="CLICK" onclick="abc()">
         </form>
-        </div>
-        </body>
-        </html>
+    </div>
+</body>
+</html>

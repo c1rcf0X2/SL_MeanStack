@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function myage() {
+        age = document.getElementById('age').value;
+        if (age < 18){
+            alert("Invalid Age")
+            newage = prompt("Please Enter the Correct Age")
+            resp = confirm("Is it the Correct Age  ?")
+            if (resp) {
+                document.write("Good..!")
+            }
+            else {
+                document.write("Please Enter Once Again...!")
+            }
+        }
+        else {
+            alert("Valid Age")
+        }
+    }
+</script>
+
+<body>
+    <div>
+        <h1>Window object : alert, confirm, prompt(BOM : browser object Model</h1>
+            ENTER AGE :<input type="text" id="age">
+            <input type="submit" value="ENTER AGE" onclick="myage()">
+
+        
+    </div>
+
+</body>
+
+</html>
